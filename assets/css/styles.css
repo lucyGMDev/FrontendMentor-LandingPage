@@ -1,3 +1,72 @@
+*{
+  box-sizing: border-box;
+}
 body{
   background-image: url(../images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 3rem 5rem;
+  margin:0;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+  margin-bottom: 4rem;
+}
+
+.main-content{
+  position:relative;
+  display: flex;
+}
+.main-content__call-to-action{
+  margin-left: 6rem;
+  width: 600px;
+}
+.call-to-action__title{
+  font-size: 2.5rem;
+}
+.call-to-action__cta{
+  display:block;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  background-color: #fff;
+  height: 50px;
+  width: 200px;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 0.3);
+}
+
+.network-cta{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.network-icon{
+  margin-right: 2rem;
+  width: 40px;
+  cursor: pointer;
+}
+.network-icon path{
+
+  fill:#fff;
+  transition: fill 300ms;
+}
+.network-icon path:hover{
+  fill: hsl(300, 69%, 71%);
+}
+
+.footer{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.attribution a{
+  color:#fff;
 }
