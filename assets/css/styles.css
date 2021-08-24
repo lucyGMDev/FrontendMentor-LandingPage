@@ -20,10 +20,17 @@ body{
 .main-content{
   position:relative;
   display: flex;
+  
 }
+
+.main-content__mockups{
+  width:50%;
+  height:auto;
+}
+
 .main-content__call-to-action{
   margin-left: 6rem;
-  width: 600px;
+  width: 40%;
 }
 .call-to-action__title{
   font-size: 2.5rem;
@@ -40,6 +47,12 @@ body{
   text-align: center;
   line-height: 50px;
   box-shadow: 5px 5px 5px rgb(0 0 0 / 0.3);
+  transition: background-color 300ms, color 300ms;
+}
+
+.call-to-action__cta:hover{
+  background-color:hsl(300, 69%, 71%);
+  color: white;
 }
 
 .network-cta{
@@ -58,7 +71,7 @@ body{
   fill:#fff;
   transition: fill 300ms;
 }
-.network-icon path:hover{
+.network-icon:hover path{
   fill: hsl(300, 69%, 71%);
 }
 
@@ -69,4 +82,40 @@ body{
 
 .attribution a{
   color:#fff;
+}
+
+@media (max-width:375px){
+  body{
+    padding:1.5rem 1.5rem;
+  }
+  .page__logo{
+    width: 40%;
+  }
+  .main-content{
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-content__mockups{
+    width: 100%;
+  }
+  .main-content__call-to-action{
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .call-to-action__title{
+    font-size: 1.5rem;
+  }
+  .call-to-action__cta{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .network-cta{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
 }
