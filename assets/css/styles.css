@@ -66,22 +66,31 @@ body{
   bottom: 0;
 
 }
-
+.networks-list{
+  list-style: none;
+  
+}
+.network-link{
+  display: inline-block;
+}
 .network-icon{
   margin-right: 2rem;
   width: 40px;
   cursor: pointer;
 }
 .network-icon path{
-
   fill:#fff;
   transition: fill 300ms;
 }
 .network-icon:hover path{
   fill: hsl(300, 69%, 71%);
 }
+.network-cta__name{
+  font-size: 0;
+}
 
 .footer{
+  position: relative;
   width: 100%;
   text-align: center;
 }
@@ -101,7 +110,7 @@ body{
     font-size: 1.5rem;
   }
   .main-content__mockups{
-    width: 70%;
+    width: 40%;
   }
   .call-to-action__title{
     font-size: 2.5rem;
